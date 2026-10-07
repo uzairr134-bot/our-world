@@ -46,7 +46,7 @@ const specialDays = [
     date: "Aug 06",
     note: "The day we celebrated not just a birthday, but the joy of being in each other’s life."
   },
-  ![image alt}(https://github.com/uzairr134-bot/our-world/blob/8aea0068fc9e562e8d2a76ebe3d2db3f0f480684/UZAIR%2022.jpeg)
+  ![image alt](https://github.com/uzairr134-bot/our-world/blob/a74ae3524ce51bf027699d1676e58aa505247cbe/UZAIR%2022.jpeg)
   ![image alt](https://github.com/uzairr134-bot/our-world/blob/b323f116feb7e257aee16d49cfa2c1b05c177dbe/UZAIR23.jpeg)
 
 
