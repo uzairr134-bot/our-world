@@ -46,7 +46,13 @@ const specialDays = [
     date: "Aug 06",
     note: "The day we celebrated not just a birthday, but the joy of being in each other’s life."
   },
-  {
+  ![image alt}(https://github.com/uzairr134-bot/our-world/blob/8aea0068fc9e562e8d2a76ebe3d2db3f0f480684/UZAIR%2022.jpeg)
+
+
+
+
+
+{
     title: "Travel memories",
     date: "Sep 14",
     note: "When the world was new, and every moment felt like an adventure made for two."
