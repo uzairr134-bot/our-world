@@ -38,7 +38,7 @@ const specialDays = [
   },
   {
     title: "Our anniversary",
-    date: "May 20",
+    date: "5 Oct",
     note: "A reminder that love grows deeper, softer, and stronger with time."
   },
   {

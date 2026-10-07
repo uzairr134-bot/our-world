@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our World</title>
+    <title>Uzair & Tamveel</title>
     <meta
       name="description"
       content="A romantic space for our memories, photos, location, and special days."
@@ -19,7 +19,7 @@
   <body>
     <div class="page-shell">
       <header class="topbar">
-        <div class="brand">Our World</div>
+        <div class="brand">Uzair & Tamveel</div>
         <nav class="nav">
           <a href="#home">Home</a>
           <a href="#story">Story</a>
@@ -33,7 +33,7 @@
         <section class="hero" id="home">
           <div class="hero__text">
             <p class="eyebrow">Made with love</p>
-            <h1>Hello, this is your world</h1>
+            <h1>Hello, this is our world</h1>
             <p class="hero__lead">
               A little space made only for us — full of our favorite photos,
               sweet memories, beautiful places, and every moment that made our
@@ -96,7 +96,7 @@
                 I love the way life feels easier, kinder, and more beautiful
                 when you are in it.
               </p>
-              <span>— Yours forever</span>
+              <span>— Uzair & Tamveel</span>
             </div>
           </div>
         </section>
@@ -131,9 +131,9 @@
               </div>
               <div class="location__meta">
                 <strong>Home is where we are</strong>
-                <p>City: Your city / Our favorite place</p>
+                <p>City: Srinagar, Jammu & Kashmir</p>
                 <a
-                  href="https://www.google.com/maps/search/?api=1&query=your+favorite+place"
+                  href="https://www.google.com/maps/search/?api=1&query=Srinagar+Jammu+and+Kashmir"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -146,11 +146,12 @@
               <p>
                 Some days are about the places we visit, and some are about the
                 feeling of being safe and happy in each other’s company. That’s
-                the real magic of us.
+                the real magic of us, and Srinagar feels like one of those memories
+                we will always carry in our hearts.
               </p>
               <ul>
-                <li>Favorite café date</li>
-                <li>Long walks and slow evenings</li>
+                <li>Lake walks and calm evenings</li>
+                <li>Beautiful streets and cozy moments</li>
                 <li>Late-night talks and morning smiles</li>
                 <li>Dreams we have yet to live together</li>
               </ul>
@@ -161,7 +162,7 @@
         <section class="note section">
           <div class="note__card">
             <p class="eyebrow">A little note</p>
-            <h2>To the love of my life</h2>
+            <h2>To my love, Tamveel</h2>
             <p>
               You are my favorite person, my sweetest comfort, and my most
               treasured forever. This world is beautiful because you are in it.
@@ -171,7 +172,7 @@
       </main>
 
       <footer class="footer">
-        <p>Made with love for you • <span id="year"></span></p>
+        <p>Made with love for Uzair & Tamveel • <span id="year"></span></p>
       </footer>
     </div>
 
