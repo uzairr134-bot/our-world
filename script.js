@@ -1,568 +1,86 @@
-:root {
-  --bg: #fffaf8;
-  --bg-soft: #f9f0f3;
-  --panel: rgba(255, 255, 255, 0.72);
-  --panel-strong: #fff;
-  --primary: #b85c7d;
-  --primary-deep: #8a3a5d;
-  --secondary: #f5d7d9;
-  --gold: #d4b77e;
-  --text: #2a1c25;
-  --muted: #5f4652;
-  --shadow: 0 24px 60px rgba(173, 84, 107, 0.12);
-  --border: rgba(184, 92, 125, 0.15);
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  font-family: "Inter", sans-serif;
-  color: var(--text);
-  background:
-    radial-gradient(circle at top, rgba(245, 215, 217, 0.7), transparent 32%),
-    linear-gradient(135deg, #fff7f8 0%, #fffaf8 30%, #fff 100%);
-}
-
-img {
-  display: block;
-  width: 100%;
-}
-
-button,
-a {
-  font: inherit;
-}
-
-.page-shell {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px 24px 60px;
-}
-
-.topbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  backdrop-filter: blur(14px);
-  background: rgba(255, 250, 248, 0.8);
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  padding: 14px 24px;
-  margin: 10px 0 30px;
-}
-
-.brand {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 700;
-  font-size: clamp(1.8rem, 2vw, 2.4rem);
-  letter-spacing: 0.04em;
-}
-
-.nav {
-  display: flex;
-  gap: 22px;
-  flex-wrap: wrap;
-}
-
-.nav a {
-  color: var(--muted);
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s ease;
-}
-
-.nav a:hover {
-  color: var(--primary);
-}
-
-.hero {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  align-items: center;
-  gap: 50px;
-  padding: 40px 8px 30px;
-}
-
-.eyebrow {
-  margin: 0 0 12px;
-  color: var(--primary);
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 0.76rem;
-  font-weight: 700;
-}
-
-.hero__text h1,
-.section-heading h2,
-.note__card h2 {
-  margin: 0;
-  line-height: 0.96;
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 700;
-}
-
-.hero__text h1 {
-  font-size: clamp(3rem, 7vw, 6.2rem);
-  letter-spacing: -0.04em;
-}
-
-.hero__lead {
-  max-width: 620px;
-  margin-top: 20px;
-  color: var(--muted);
-  font-size: 1.08rem;
-  line-height: 1.8;
-}
-
-.hero__actions {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-top: 26px;
-}
-
-.button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 24px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.button:hover {
-  transform: translateY(-1px);
-}
-
-.button--primary {
-  background: linear-gradient(135deg, var(--primary), var(--primary-deep));
-  color: #fff;
-  box-shadow: 0 12px 24px rgba(170, 89, 113, 0.2);
-}
-
-.button--secondary {
-  border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.65);
-  color: var(--text);
-}
-
-.hero__card {
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 32px;
-  padding: 18px;
-  box-shadow: var(--shadow);
-}
-
-.hero__photo-frame {
-  overflow: hidden;
-  border-radius: 24px;
-  height: 530px;
-}
-
-.hero__photo-frame img {
-  height: 100%;
-  object-fit: cover;
-}
-
-.hero__mini-stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  margin-top: 18px;
-}
-
-.hero__mini-stats div {
-  background: rgba(255, 255, 255, 0.8);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 16px 10px;
-  text-align: center;
-}
-
-.hero__mini-stats span {
-  display: block;
-  font-size: 0.75rem;
-  color: var(--muted);
-  margin-bottom: 6px;
-}
-
-.hero__mini-stats strong {
-  font-size: 1.2rem;
-  color: var(--primary-deep);
-}
-
-.section {
-  padding-top: 80px;
-}
-
-.section-heading {
-  margin-bottom: 26px;
-}
-
-.section-heading h2 {
-  font-size: clamp(2.2rem, 4vw, 4rem);
-  max-width: 720px;
-}
-
-.story__layout {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 26px;
-  align-items: center;
-}
-
-.story__text {
-  background: var(--panel-strong);
-  border: 1px solid var(--border);
-  border-radius: 28px;
-  padding: 30px;
-  box-shadow: var(--shadow);
-}
-
-.story__text p {
-  margin: 0 0 18px;
-  color: var(--muted);
-  line-height: 1.9;
-  font-size: 1.04rem;
-}
-
-.story__text p:last-child {
-  margin-bottom: 0;
-}
-
-.story__card {
-  position: relative;
-  background: linear-gradient(135deg, rgba(245, 215, 217, 0.8), rgba(255, 255, 255, 0.85));
-  border: 1px solid var(--border);
-  border-radius: 28px;
-  padding: 34px 28px;
-  min-height: 230px;
-  box-shadow: var(--shadow);
-}
-
-.quote-mark {
-  margin: 0;
-  font-size: 5rem;
-  line-height: 1;
-  color: var(--primary);
-  font-family: "Cormorant Garamond", serif;
-}
-
-.story__card p {
-  font-size: 1.4rem;
-  line-height: 1.5;
-  margin: 0 0 18px;
-  color: var(--text);
-  font-family: "Cormorant Garamond", serif;
-}
-
-.story__card span {
-  color: var(--muted);
-  font-weight: 600;
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.gallery-item {
-  overflow: hidden;
-  border-radius: 22px;
-  background: var(--panel-strong);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
-}
-
-.gallery-item img {
-  width: 100%;
-  height: 360px;
-  object-fit: cover;
-}
-
-.gallery-item__caption {
-  padding: 16px 18px 18px;
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
-.timeline {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.timeline-item {
-  position: relative;
-  padding: 28px 22px 22px;
-  background: linear-gradient(180deg, rgba(255,255,255,0.92), rgba(249,240,243,0.9));
-  border: 1px solid var(--border);
-  border-radius: 22px;
-  box-shadow: var(--shadow);
-}
-
-.timeline-item::before {
-  content: "";
-  position: absolute;
-  top: 16px;
-  left: 22px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--gold), var(--primary));
-  box-shadow: 0 0 0 6px rgba(212, 183, 126, 0.18);
-}
-
-.timeline-item h3 {
-  margin: 14px 0 8px;
-  padding-left: 12px;
-  font-size: 1.3rem;
-}
-
-.timeline-item .date {
-  display: inline-block;
-  margin-left: 12px;
-  background: rgba(184, 92, 125, 0.08);
-  border: 1px solid rgba(184, 92, 125, 0.2);
-  color: var(--primary-deep);
-  padding: 6px 10px;
-  border-radius: 999px;
-  font-size: 0.72rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.timeline-item p {
-  margin: 0;
-  padding-left: 12px;
-  color: var(--muted);
-  line-height: 1.75;
-}
-
-.location__layout {
-  display: grid;
-  grid-template-columns: 1fr 0.8fr;
-  gap: 26px;
-}
-
-.map-card {
-  background: var(--panel-strong);
-  border: 1px solid var(--border);
-  border-radius: 28px;
-  box-shadow: var(--shadow);
-  overflow: hidden;
-}
-
-.map-card__badge {
-  display: inline-block;
-  margin: 18px 18px 0;
-  background: rgba(184, 92, 125, 0.09);
-  color: var(--primary-deep);
-  border: 1px solid rgba(184, 92, 125, 0.2);
-  border-radius: 999px;
-  padding: 7px 12px;
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.map-view {
-  position: relative;
-  height: 330px;
-  margin: 16px 18px 0;
-  border-radius: 22px;
-  background:
-    linear-gradient(135deg, rgba(171, 214, 217, 0.9), rgba(218, 213, 244, 0.85)),
-    repeating-linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.16),
-      rgba(255, 255, 255, 0.16) 1px,
-      transparent 1px,
-      transparent 22px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.12),
-      rgba(255, 255, 255, 0.12) 1px,
-      transparent 1px,
-      transparent 22px
-    );
-  overflow: hidden;
-}
-
-.map-view::before,
-.map-view::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(255,255,255,0.15), transparent 48%);
-}
-
-.pin {
-  position: absolute;
-  top: 46%;
-  left: 52%;
-  width: 22px;
-  height: 22px;
-  border-radius: 50% 50% 50% 0;
-  transform: rotate(-45deg);
-  background: linear-gradient(135deg, var(--primary), var(--primary-deep));
-  box-shadow: 0 0 0 8px rgba(184, 92, 125, 0.14);
-}
-
-.pin::after {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  top: 6px;
-  left: 6px;
-  background: rgba(255, 255, 255, 0.9);
-}
-
-.location__meta {
-  padding: 18px 20px 22px;
-}
-
-.location__meta strong {
-  display: block;
-  font-size: 1.2rem;
-  margin-bottom: 8px;
-}
-
-.location__meta p {
-  margin: 0 0 12px;
-  color: var(--muted);
-}
-
-.location__meta a {
-  color: var(--primary-deep);
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.location__info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid var(--border);
-  border-radius: 28px;
-  padding: 28px;
-  box-shadow: var(--shadow);
-}
-
-.location__info p {
-  margin: 0 0 18px;
-  color: var(--muted);
-  font-size: 1.03rem;
-  line-height: 1.9;
-}
-
-.location__info ul {
-  margin: 0;
-  padding-left: 18px;
-  color: var(--text);
-  line-height: 2;
-}
-
-.note__card {
-  background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(245,215,217,0.66));
-  border: 1px solid var(--border);
-  border-radius: 30px;
-  box-shadow: var(--shadow);
-  padding: 40px 32px;
-  text-align: center;
-}
-
-.note__card h2 {
-  font-size: clamp(2.4rem, 4vw, 4rem);
-  margin-bottom: 14px;
-}
-
-.note__card p {
-  max-width: 720px;
-  margin: 0 auto;
-  color: var(--muted);
-  font-size: 1.08rem;
-  line-height: 1.9;
-}
-
-.footer {
-  text-align: center;
-  padding-top: 38px;
-  color: var(--muted);
-  font-weight: 600;
-}
-
-@media (max-width: 900px) {
-  .hero,
-  .story__layout,
-  .location__layout,
-  .timeline,
-  .gallery-grid {
-    grid-template-columns: 1fr;
+const galleryImages = [
+  {
+    src: "UZAIR 22.jpeg",
+    caption: "Our favorite smile."
+  },
+  {
+    src: "UZAIR23.jpeg",
+    caption: "Our sweetest memories."
+  },
+  {
+    src: "WhatsApp Image 2026-10-06 at 11.59.07 AM.jpeg",
+    caption: "A moment worth keeping forever."
+  },
+  {
+    src: "WhatsApp Image 2026-10-06 at 12.00.09 PM (1).jpeg",
+    caption: "The days we will always remember."
   }
+];
 
-  .hero {
-    gap: 28px;
+const specialDays = [
+  {
+    title: "First hello",
+    date: "Jan 15",
+    note: "The day our story started and everything changed for the better."
+  },
+  {
+    title: "Our first date",
+    date: "Feb 02",
+    note: "A simple evening that somehow felt like the beginning of forever."
+  },
+  {
+    title: "Our anniversary",
+    date: "5 Oct",
+    note: "A reminder that love grows deeper, softer, and stronger with time."
+  },
+  {
+    title: "Birthday together",
+    date: "Aug 06",
+    note: "The day we celebrated not just a birthday, but the joy of being in each other’s life."
+  },
+  {
+    title: "Travel memories",
+    date: "Sep 14",
+    note: "When the world was new, and every moment felt like an adventure made for two."
+  },
+  {
+    title: "Forever us",
+    date: "Always",
+    note: "The promise that no matter where life leads, my heart will always choose you."
   }
+];
 
-  .hero__photo-frame {
-    height: 420px;
-  }
+const galleryGrid = document.getElementById("gallery-grid");
+const timeline = document.getElementById("timeline");
+const year = document.getElementById("year");
 
-  .topbar {
-    flex-direction: column;
-    gap: 10px;
-  }
+if (galleryGrid) {
+  galleryGrid.innerHTML = galleryImages
+    .map(
+      (image) => `
+        <article class="gallery-item">
+          <img src="${image.src}" alt="${image.caption}" />
+          <div class="gallery-item__caption">${image.caption}</div>
+        </article>
+      `
+    )
+    .join("");
 }
 
-@media (max-width: 560px) {
-  .page-shell {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
+if (timeline) {
+  timeline.innerHTML = specialDays
+    .map(
+      (day) => `
+        <article class="timeline-item">
+          <h3>${day.title}</h3>
+          <span class="date">${day.date}</span>
+          <p>${day.note}</p>
+        </article>
+      `
+    )
+    .join("");
+}
 
-  .nav {
-    justify-content: center;
-    gap: 12px 16px;
-  }
-
-  .button {
-    width: 100%;
-  }
-
-  .hero__actions {
-    flex-direction: column;
-  }
-
-  .hero__mini-stats {
-    grid-template-columns: 1fr;
-  }
-
-  .story__text,
-  .story__card,
-  .location__info,
-  .note__card {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+if (year) {
+  year.textContent = new Date().getFullYear();
 }

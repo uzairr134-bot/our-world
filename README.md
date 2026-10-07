@@ -1,100 +1,181 @@
-const galleryImages = [
-  {
-    src: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80",
-    caption: "The day our smiles felt like home."
-  },
-  {
-    src: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80",
-    caption: "A little laugh, a lot of love."
-  },
-  {
-    src: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=900&q=80",
-    caption: "Our favorite kind of peace."
-  },
-  {
-    src: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=900&q=80",
-    caption: "Moments that make my heart pause."
-  },
-  {
-    src: "https://images.unsplash.com/photo-1521119989659-a83eee488004?auto=format&fit=crop&w=900&q=80",
-    caption: "You are my favorite view."
-  },
-  {
-    src: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=900&q=80",
-    caption: "Every day with you feels like a story worth keeping."
-  }
-];
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uzair & Tamveel</title>
+    <meta
+      name="description"
+      content="A romantic space for our memories, photos, location, and special days."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">Uzair & Tamveel</div>
+        <nav class="nav">
+          <a href="#home">Home</a>
+          <a href="#story">Story</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#moments">Moments</a>
+          <a href="#location">Location</a>
+        </nav>
+      </header>
 
-const specialDays = [
-  {
-    title: "First hello",
-    date: "Jan 15",
-    note: "The day our story started and everything changed for the better."
-  },
-  {
-    title: "Our first date",
-    date: "Feb 02",
-    note: "A simple evening that somehow felt like the beginning of forever."
-  },
-  {
-    title: "Our anniversary",
-    date: "5 Oct",
-    note: "A reminder that love grows deeper, softer, and stronger with time."
-  },
-  {
-    title: "Birthday together",
-    date: "Aug 06",
-    note: "The day we celebrated not just a birthday, but the joy of being in each other’s life."
-  },
-  ![image alt](https://github.com/uzairr134-bot/our-world/blob/a74ae3524ce51bf027699d1676e58aa505247cbe/UZAIR%2022.jpeg)
-  ![image alt](https://github.com/uzairr134-bot/our-world/blob/b323f116feb7e257aee16d49cfa2c1b05c177dbe/UZAIR23.jpeg)
-  ![image alt](https://github.com/uzairr134-bot/our-world/blob/f2241b4040788193e079b4b07397504b0bcfdb06/WhatsApp%20Image%202026-10-06%20at%2011.59.07%20AM.jpeg)
-  !image alt](https://github.com/uzairr134-bot/our-world/blob/fb8c8f0de5004455f3898c63c7b9f09efff78460/WhatsApp%20Image%202026-10-06%20at%2012.00.09%20PM%20(1).jpeg)
+      <main>
+        <section class="hero" id="home">
+          <div class="hero__text">
+            <p class="eyebrow">Made with love</p>
+            <h1>Hello, this is our world</h1>
+            <p class="hero__lead">
+              A little space made only for us — full of our favorite photos,
+              sweet memories, beautiful places, and every moment that made our
+              love feel like home.
+            </p>
+            <div class="hero__actions">
+              <a class="button button--primary" href="#gallery">See our gallery</a>
+              <a class="button button--secondary" href="#location">Pin our place</a>
+            </div>
+          </div>
 
+          <div class="hero__card">
+            <div class="hero__photo-frame">
+              <img
+                src="UZAIR23.jpeg"
+                alt="Couple together"
+              />
+            </div>
+            <div class="hero__mini-stats">
+              <div>
+                <span>Photos</span>
+                <strong>∞</strong>
+              </div>
+              <div>
+                <span>Memories</span>
+                <strong>❤</strong>
+              </div>
+              <div>
+                <span>Forever</span>
+                <strong>Us</strong>
+              </div>
+            </div>
+          </div>
+        </section>
 
-{
-    title: "Travel memories",
-    date: "Sep 14",
-    note: "When the world was new, and every moment felt like an adventure made for two."
-  },
-  {
-    title: "Forever us",
-    date: "Always",
-    note: "The promise that no matter where life leads, my heart will always choose you."
-  }
-];
+        <section class="story" id="story">
+          <div class="section-heading">
+            <p class="eyebrow">Our story</p>
+            <h2>Every chapter feels like a love letter.</h2>
+          </div>
 
-const galleryGrid = document.getElementById("gallery-grid");
-const timeline = document.getElementById("timeline");
-const year = document.getElementById("year");
+          <div class="story__layout">
+            <div class="story__text">
+              <p>
+                From the first hello to the many little moments in between, you
+                have made my world softer, brighter, and more beautiful. This is
+                a place for all the quiet glances, warm smiles, and unforgettable
+                memories that only we understand.
+              </p>
+              <p>
+                Every photo here is a reminder that love grows in the details —
+                the laughter, the comfort, the shared dreams and the places where
+                our hearts always seem to find each other.
+              </p>
+            </div>
 
-if (galleryGrid) {
-  galleryGrid.innerHTML = galleryImages
-    .map(
-      (image) => `
-        <article class="gallery-item">
-          <img src="${image.src}" alt="${image.caption}" />
-          <div class="gallery-item__caption">${image.caption}</div>
-        </article>
-      `
-    )
-    .join("");
-}
+            <div class="story__card">
+              <p class="quote-mark">“</p>
+              <p>
+                I love the way life feels easier, kinder, and more beautiful
+                when you are in it.
+              </p>
+              <span>— Uzair & Tamveel</span>
+            </div>
+          </div>
+        </section>
 
-if (timeline) {
-  timeline.innerHTML = specialDays
-    .map(
-      (day) => `
-        <article class="timeline-item">
-          <h3>${day.title}</h3>
-          <span class="date">${day.date}</span>
-          <p>${day.note}</p>
-        </article>
-      `
-    )
-    .join("");
-}
+        <section class="gallery section" id="gallery">
+          <div class="section-heading">
+            <p class="eyebrow">Our gallery</p>
+            <h2>Snapshots of us.</h2>
+          </div>
+          <div class="gallery-grid" id="gallery-grid"></div>
+        </section>
 
-if (year) {
-  year.textContent = new Date().getFullYear();
-}
+        <section class="moments section" id="moments">
+          <div class="section-heading">
+            <p class="eyebrow">Pinned memories</p>
+            <h2>Our favorite days stay close to my heart.</h2>
+          </div>
+          <div class="timeline" id="timeline"></div>
+        </section>
+
+        <section class="location section" id="location">
+          <div class="section-heading">
+            <p class="eyebrow">Where we are</p>
+            <h2>Always together, no matter where life takes us.</h2>
+          </div>
+
+          <div class="location__layout">
+            <div class="map-card">
+              <div class="map-card__badge">Our place</div>
+              <div class="map-view">
+                <div class="pin"></div>
+              </div>
+              <div class="location__meta">
+                <strong>Home is where we are</strong>
+                <p>City: Srinagar, Jammu & Kashmir</p>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Srinagar+Jammu+and+Kashmir"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Open map
+                </a>
+              </div>
+            </div>
+
+            <div class="location__info">
+              <p>
+                Some days are about the places we visit, and some are about the
+                feeling of being safe and happy in each other’s company. That’s
+                the real magic of us, and Srinagar feels like one of those memories
+                we will always carry in our hearts.
+              </p>
+              <ul>
+                <li>Lake walks and calm evenings</li>
+                <li>Beautiful streets and cozy moments</li>
+                <li>Late-night talks and morning smiles</li>
+                <li>Dreams we have yet to live together</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="note section">
+          <div class="note__card">
+            <p class="eyebrow">A little note</p>
+            <h2>To my love, Tamveel</h2>
+            <p>
+              You are my favorite person, my sweetest comfort, and my most
+              treasured forever. This world is beautiful because you are in it.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>Made with love for Uzair & Tamveel • <span id="year"></span></p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
