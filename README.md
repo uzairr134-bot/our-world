@@ -48,7 +48,7 @@ const specialDays = [
   },
   ![image alt](https://github.com/uzairr134-bot/our-world/blob/a74ae3524ce51bf027699d1676e58aa505247cbe/UZAIR%2022.jpeg)
   ![image alt](https://github.com/uzairr134-bot/our-world/blob/b323f116feb7e257aee16d49cfa2c1b05c177dbe/UZAIR23.jpeg)
-
+  ![image alt](https://github.com/uzairr134-bot/our-world/blob/f2241b4040788193e079b4b07397504b0bcfdb06/WhatsApp%20Image%202026-10-06%20at%2011.59.07%20AM.jpeg)
 
 
 
